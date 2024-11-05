@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:mvvmex/utils/routes/routes.dart';
-import 'package:mvvmex/utils/routes/routes_name.dart';
-import 'package:mvvmex/view/home_screen.dart';
-import 'package:mvvmex/view_model/auth_view_model.dart';
-import 'package:provider/provider.dart';
+import 'package:architecture/utils/exports.dart';
 
 void main() {
   runApp(const MyApp());

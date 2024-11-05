@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:mvvmex/repository/auth_repository.dart';
-import 'package:mvvmex/utils/routes/routes_name.dart';
-import 'package:mvvmex/utils/utils.dart';
+import 'package:architecture/utils/exports.dart';
 
 class AuthViewModel with ChangeNotifier {
   final _myRepo = AuthRepository();

@@ -1,21 +1,19 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:mvvmex/utils/routes/routes_name.dart';
-import 'package:mvvmex/view/home_screen.dart';
-import 'package:mvvmex/view/login_screen.dart';
+import 'package:architecture/utils/exports.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case RoutesName.home:
         return MaterialPageRoute(
-          builder: (BuildContext context) => HomeScreen(),
+          builder: (BuildContext context) => const HomeScreen(),
         );
-        case RoutesName.login:
-        return MaterialPageRoute(builder: (context) => LoginScreen(),);
+      case RoutesName.login:
+        return MaterialPageRoute(
+          builder: (context) => const LoginScreen(),
+        );
       default:
         return MaterialPageRoute(
-          builder: (_) => Scaffold(
+          builder: (_) => const Scaffold(
             body: Center(
               child: Text('Page not found'),
             ),

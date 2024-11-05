@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:mvvmex/res/color.dart';
-import 'package:mvvmex/res/components/round_button.dart';
-import 'package:mvvmex/utils/utils.dart';
-import 'package:mvvmex/view_model/auth_view_model.dart';
-import 'package:provider/provider.dart';
+import 'package:architecture/utils/exports.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

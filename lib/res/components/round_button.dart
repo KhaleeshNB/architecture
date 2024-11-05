@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:mvvmex/res/color.dart';
+import 'package:architecture/utils/exports.dart';
 
 class RoundBtn extends StatelessWidget {
   final String title;
@@ -20,18 +19,18 @@ class RoundBtn extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           color: AppColor.success,
         ),
-        child: Center(
-          child: loading
-              ? CircularProgressIndicator()
-              : Text(
-                  title,
-                  style: TextStyle(color: Colors.white, fontSize: 18),
-                ),
-        ),
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         height: 50,
         width: 550,
-        margin: EdgeInsets.all(10),
+        margin: const EdgeInsets.all(10),
+        child: Center(
+          child: loading
+              ? const CircularProgressIndicator()
+              : Text(
+                  title,
+                  style: const TextStyle(color: Colors.white, fontSize: 18),
+                ),
+        ),
       ),
     );
   }

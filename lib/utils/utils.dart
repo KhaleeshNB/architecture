@@ -1,7 +1,4 @@
-import 'package:another_flushbar/flushbar.dart';
-import 'package:another_flushbar/flushbar_route.dart';
-import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:architecture/utils/exports.dart';
 
 class Utils {
   static void fieldFocusChange(
@@ -19,15 +16,15 @@ class Utils {
         context: context,
         flushbar: Flushbar(
           forwardAnimationCurve: Curves.decelerate,
-          margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-          padding: EdgeInsets.all(15),
+          margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          padding: const EdgeInsets.all(15),
           message: message,
           backgroundColor: Colors.red,
           borderRadius: BorderRadius.circular(8),
-          duration: Duration(seconds: 2),
+          duration: const Duration(seconds: 2),
           reverseAnimationCurve: Curves.easeInOut,
           positionOffset: 20,
-          icon: Icon(
+          icon: const Icon(
             Icons.error,
             size: 28,
             color: Colors.white,
@@ -41,15 +38,15 @@ class Utils {
         context: context,
         flushbar: Flushbar(
           forwardAnimationCurve: Curves.decelerate,
-          margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-          padding: EdgeInsets.all(15),
+          margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          padding: const EdgeInsets.all(15),
           message: message,
           backgroundColor: Colors.green,
           borderRadius: BorderRadius.circular(8),
-          duration: Duration(seconds: 2),
+          duration: const Duration(seconds: 2),
           reverseAnimationCurve: Curves.easeInOut,
           positionOffset: 20,
-          icon: Icon(
+          icon: const Icon(
             Icons.error,
             size: 28,
             color: Colors.white,
